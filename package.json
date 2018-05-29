@@ -1,0 +1,38 @@
+{
+  "name": "brain_games_ddos_kaz",
+  "version": "1.0.0",
+  "description": "Brain Games hexlet project",
+  "main": "index.js",
+  "files" : [
+     "dist"
+   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
+    "src/bin/brain-games.js": "chmod +x brain-games.js",
+    "babel-node" : "babel-node"
+  },
+  "bin": {
+     "brain-games": "dist/bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddos-kaz/project-lvl1-s284.git"
+  },
+  "keywords": [
+    "BrainGames"
+  ],
+  "author": "ddos-kaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddos-kaz/project-lvl1-s284/issues"
+  },
+  "homepage": "https://github.com/ddos-kaz/project-lvl1-s284#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
